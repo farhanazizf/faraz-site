@@ -157,13 +157,12 @@ const Hero: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-transparent"></div>
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.1),transparent_50%)] group-hover:opacity-80 transition-opacity duration-500"></div>
 
-                {/* Initials */}
-                <span className="text-7xl font-bold text-white relative z-10 group-hover:scale-110 transition-transform duration-300">
-                  {personalInfo.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")}
-                </span>
+                {/* Logo */}
+                <img 
+                  src="/logo-transparent.png" 
+                  alt="Portfolio Logo" 
+                  className="w-32 h-32 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
+                />
 
                 {/* Floating Elements */}
                 <div className="absolute top-6 right-6 w-3 h-3 bg-primary-300 rounded-full animate-ping"></div>
