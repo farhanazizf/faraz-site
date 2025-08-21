@@ -1,0 +1,8 @@
+/* App-specific styles */
+.App {
+  min-height: 100vh;
+  background-color: var(--dark-950);
+  color: var(--dark-100);
+}
+
+/* Additional app-specific styles can be added here */
