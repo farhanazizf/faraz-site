@@ -1,69 +1,142 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio showcases my professional experience, projects, and skills as a software engineer and athlete.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Optimized for all device sizes (mobile, tablet, desktop)
+- **Modern UI/UX**: Clean, professional design with smooth animations
+- **Interactive Components**: Image carousels, contact forms, and navigation
+- **Professional Sections**:
+  - Hero section with quick contact links
+  - About section highlighting engineer-athlete identity
+  - Experience timeline with detailed work history
+  - Portfolio grid with project showcases
+  - Education background
+  - Contact form with social media links
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Icons**: Lucide React
+- **Deployment**: Vercel (recommended)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📋 Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- Node.js (version 18 or higher)
+- npm or yarn package manager
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🔧 Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd portfolio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**
+   Navigate to `http://localhost:5173`
+
+## 🏗️ Build & Deployment
+
+### Local Build
+```bash
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Deploy to Vercel (Recommended)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Push your code to GitHub
+2. Connect your GitHub repository to [Vercel](https://vercel.com)
+3. Vercel will automatically detect the Vite configuration
+4. Deploy with one click!
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Alternative Deployment Options
+
+- **Netlify**: Drag and drop the `dist` folder
+- **GitHub Pages**: Use GitHub Actions for automated deployment
+- **Firebase Hosting**: Use Firebase CLI
+
+## 📁 Project Structure
+
 ```
+src/
+├── components/          # React components
+│   ├── Header.tsx      # Navigation header
+│   ├── Hero.tsx        # Hero section with contact info
+│   ├── About.tsx       # About section
+│   ├── Experience.tsx  # Work experience timeline
+│   ├── Portfolio.tsx   # Projects showcase
+│   ├── Education.tsx   # Education background
+│   ├── Contact.tsx     # Contact form
+│   └── Footer.tsx      # Footer component
+├── data/
+│   └── resume.ts       # Portfolio data and content
+├── types/
+│   └── index.ts        # TypeScript type definitions
+└── assets/             # Static assets
+```
+
+## 🎨 Customization
+
+### Update Personal Information
+Edit `src/data/resume.ts` to customize:
+- Personal details and contact information
+- Work experience and projects
+- Education background
+- Skills and technologies
+
+### Modify Styling
+- Update Tailwind classes in components
+- Customize colors in `tailwind.config.js`
+- Add custom CSS in component files
+
+### Add New Sections
+1. Create new component in `src/components/`
+2. Import and add to `src/App.tsx`
+3. Update data structure in `src/data/resume.ts`
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📞 Contact
+
+- **Email**: [Your Email]
+- **LinkedIn**: [Your LinkedIn]
+- **GitHub**: [Your GitHub]
+- **Website**: [Your Website]
+
+---
+
+**Built with ❤️ by [Your Name]** - Engineer & Athlete
