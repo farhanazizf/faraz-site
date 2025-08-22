@@ -15,8 +15,8 @@ function App() {
       <main className="flex flex-col gap-16 lg:gap-20">
         <Hero />
         <About />
-        <Experience />
         <Portfolio />
+        <Experience />
         <Education />
         <Contact />
       </main>
